@@ -17,6 +17,7 @@ For EACH headline provided, return a JSON object with:
 - "headline": The original text
 - "sentiment": "POSITIVE", "NEGATIVE", or "NEUTRAL" (regarding team winning chances)
 - "score": Float from -1.0 (Catastrophic) to +1.0 (Huge Boost). 0.0 is neutral.
+- "team": The 3-letter NBA abbreviation of the specific team affected (e.g., "LAL", "BOS", "GSW"). If multiple teams, pick the primary one. If no specific team, use "NBA".
 - "reasoning": Brief explanation (max 10 words).
 
 Output a valid JSON object with a key "analysis" containing the list.
