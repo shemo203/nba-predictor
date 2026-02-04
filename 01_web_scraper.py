@@ -28,6 +28,6 @@ else:
     with open("data.json", "w") as data_file:
         json.dump(data, data_file, indent = 4)
 
-print(article_list)
+
 
 
